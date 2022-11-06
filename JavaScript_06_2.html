@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Java Script Lesson 6</title>
+    
+    </head>
+    <body>
+        <script>
+            "use strict";
+            function Human(name, age){
+                this.name = name;
+                this.age = age;
+                this.humanInfo = function() {
+                    alert(this.name + ', '+ this.age + 'роки(років)');
+                }
+
+                
+            }
+            let sasha = new Human('Саша', 44);
+            let veronika = new Human('Вероніка', 10);
+            let bohdan = new Human('Богдан', 12);
+
+            sasha.humanInfo();
+
+        </script>  
+    </body>
